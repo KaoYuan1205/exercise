@@ -34,7 +34,7 @@ with col1:
     m.add_basemap(basemap)
 
     m.add_points_from_xy(
-        TW_fishing,
+        NORTHAED,
         x='座標(WGS84)X',
         y='座標(WGS84)Y', 
         layer_name='北部海巡署AED點位'
