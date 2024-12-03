@@ -20,7 +20,7 @@ index = options.index("OpenTopoMap")
 with col2:
     basemap = st.selectbox("Select a basemap:", options, index)
 
-TW_fishing = gpd.read_file('https://github.com/KaoYuan1205/homework1127/raw/refs/heads/main/f202311305757.geojson')
+NORTHAED = gpd.read_file('https://github.com/KaoYuan1205/homework1127/raw/refs/heads/main/f202311305757.geojson')
 
 with col1:
     m = leafmap.Map(
@@ -44,7 +44,7 @@ with col1:
     m.to_streamlit(height=700)
 
 # 顯示數據表格
-st.dataframe(TW_fishing)
+st.dataframe(NORTHAED)
 
 # 顯示原始碼
 with st.expander("See source code"):
